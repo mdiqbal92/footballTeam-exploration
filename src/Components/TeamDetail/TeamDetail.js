@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import './TeamDetail.css';
 import { Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faFileSignature, faGlobe, faBirthdayCake, faGamepad, faVenusMars } from '@fortawesome/free-solid-svg-icons'
+import {  faFileSignature, faGlobe, faBirthdayCake, faGamepad, faVenusMars, strTeamBanner } from '@fortawesome/free-solid-svg-icons'
 
 const TeamDetail = () => {
     const { idTeam } = useParams();
@@ -42,7 +42,7 @@ const TeamDetail = () => {
 
                 </div>
                 <div>
-                    <img src={male} alt="" />
+                    <img src={strTeamBanner} alt="" />
                 </div>
 
             </div>

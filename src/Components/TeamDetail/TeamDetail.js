@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import './TeamDetail.css';
-import male from '../../images/male.png';
-import female from '../../images/female.png';
 import { Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowAltCircleRight, faFileSignature, faGlobe, faBirthdayCake, faGamepad, faVenusMars } from '@fortawesome/free-solid-svg-icons'
+import {  faFileSignature, faGlobe, faBirthdayCake, faGamepad, faVenusMars } from '@fortawesome/free-solid-svg-icons'
 
 const TeamDetail = () => {
     const { idTeam } = useParams();

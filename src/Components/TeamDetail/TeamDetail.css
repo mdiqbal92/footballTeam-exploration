@@ -1,0 +1,15 @@
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.banner{
+    background-color: aliceblue;
+    border: 1px solid gold;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    display: flexbox;
+}

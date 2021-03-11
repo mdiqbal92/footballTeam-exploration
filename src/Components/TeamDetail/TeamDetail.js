@@ -50,8 +50,8 @@ const TeamDetail = () => {
                 </Card>
             </div>
 
-            <div className = "details">
-                <div>
+            <div className = "details row">
+                <div className ="col-md-6">
                     <h4> <FontAwesomeIcon icon={faFileSignature} /> Official Name: {teamDetails.strTeam} </h4>
                     <h4> <FontAwesomeIcon icon={faGlobe} /> Country: {teamDetails.strCountry} </h4>
                     <h4> <FontAwesomeIcon icon={faBirthdayCake} /> Established: {teamDetails.intFormedYear} </h4>
@@ -60,7 +60,7 @@ const TeamDetail = () => {
                     
                 </div>
 
-                <div>
+                <div className ="col-md-6">
                     <img src={bannerImage} alt="" />
                 </div>
 

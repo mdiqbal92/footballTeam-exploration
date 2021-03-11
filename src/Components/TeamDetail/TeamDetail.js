@@ -20,12 +20,24 @@ const TeamDetail = () => {
             .then(data => setTeamDetails(data.teams[0]))
     }, [idTeam]);
 
+    const headerStyle = {
+        backgroundImage: "url(https://www.spanish-fiestas.com/wp-content/uploads/2020/06/mai-bernabeu-02-1600x900.jpg)", 
+        height: "300px",
+        display: "flex",
+        justifyContent: "center",
+        padding: "10px"
+      }
     const bannerImage = teamDetails.strGender === "Male"? male : female;
-    const facebook = teamDetails.strFacebook;
-
     return (
         
-        <div className="container">
+        <div>
+            <div style ={headerStyle}>
+                <div>
+                <img style ={{width:"280px", display: "flex", justifyContent: "center"}} src={teamDetails.strTeamBadge} alt=""/>
+                </div>
+            </div>
+            
+            <div className="container">
             <div className= "banner">
                 <Card>
                     <Card.Img variant="top" src={teamDetails.strTeamBanner} />
@@ -59,11 +71,12 @@ const TeamDetail = () => {
 
             <div className="footer">
                
-                <a href={teamDetails.strTwitter} target="_blank" rel="noreferrer"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt="" width="50px"/></a>
-                <a href={facebook} target="_blank" rel="noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt="" width="50px"/></a>
-                <a href={teamDetails.strYoutube} target="_blank" rel="noreferrer"><img src="https://cdn2.iconfinder.com/data/icons/social-18/512/YouTube-512.png" alt="" width="50px"/></a>
+                <a href={`https://${teamDetails.strTwitter}`} target="_blank" rel="noreferrer"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt="" width="50px"/></a>
+                <a href={`https://${teamDetails.strFacebook}`} target="_blank" rel="noreferrer"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt="" width="50px"/></a>
+                <a href={`https://${teamDetails.strYoutube}`} target="_blank" rel="noreferrer"><img src="https://cdn2.iconfinder.com/data/icons/social-18/512/YouTube-512.png" alt="" width="50px"/></a>
                 
             </div>
+        </div>
         </div>
 
     );

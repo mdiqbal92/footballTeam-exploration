@@ -11,16 +11,10 @@ import NotFound from './Components/NotFound/NotFound';
 import TeamDetail from './Components/TeamDetail/TeamDetail';
 
 function App() {
-  const headerStyle = {
-    backgroundImage: "url(https://www.spanish-fiestas.com/wp-content/uploads/2020/06/mai-bernabeu-02-1600x900.jpg)", 
-    height: "200px",
-    textAlign: "center",
-    paddingTop: "80px",
-    color: "white",    
-  }
+  
   return (
     <div>
-    <h1 style = {headerStyle}> Football Team exploration </h1>
+    
     <Router>
       <Switch>
 

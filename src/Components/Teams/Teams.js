@@ -8,8 +8,8 @@ const Teams = (props) => {
   const { strTeam, strTeamLogo, strSport, idTeam } = props.team;
 
   return (
-    <div className="row">
-      <div className = "col-4">
+    
+      <div className = "col-md-4 container-fluid">
         <Card style={{ border: '1px solid black', padding: '10px', backgroundColor: 'azure', margin: '10px'}}>
           <Card.Img variant="top" src={strTeamLogo} />
           <Card.Body>
@@ -26,7 +26,7 @@ const Teams = (props) => {
         </Card>
       </div>
 
-    </div>
+    
   );
 };
 

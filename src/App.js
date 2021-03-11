@@ -16,9 +16,7 @@ function App() {
     height: "200px",
     textAlign: "center",
     paddingTop: "80px",
-    color: "white",
-    backgroundRepeat: "no-repeat"
-    
+    color: "white",    
   }
   return (
     <div>

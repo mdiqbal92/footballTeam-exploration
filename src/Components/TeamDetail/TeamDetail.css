@@ -10,6 +10,23 @@
     border-radius: 20px;
     margin-bottom: 20px;
     padding: 20px;
+    justify-content: center;
+    display: flex;
+}
+.details{
+    background-color: aliceblue;
+    border: 1px solid gold;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
     justify-content: space-between;
-    display: flexbox;
+    display: flex;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer a{
+    margin-left: 20px;
+    
 }

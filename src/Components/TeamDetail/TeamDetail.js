@@ -60,7 +60,7 @@ const TeamDetail = () => {
                     
                 </div>
 
-                <div className ="col-md-6">
+                <div className ="col-md-6 image-fluid">
                     <img src={bannerImage} alt="" />
                 </div>
 
